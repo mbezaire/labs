@@ -93,6 +93,15 @@ Now, let's build some client code to try out our Fraction class.
 
 ## Testing
 
+As a reminder, to compile our code we will enter a command at the terminal:
+
+`javac Client.java`
+
+This will compile our Client class and also our Fraction class. Look in the terminal for any compile errors.
+
+Once compiled, the Client code (which contains the main method) can be run by entering at the terminal:
+
+`java Client`
 
 ## How to Submit
 
