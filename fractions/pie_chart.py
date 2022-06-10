@@ -52,7 +52,7 @@ ax[1, 2].pie([1, 5], labels = ['$\\frac{1}{6}$',''], labeldistance=0.6, **piepro
 ax[1, 2].axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
 plt.show()
-plt.savefig("pie.png")
+fig1.savefig("pie.png")
 
 #############################################################################
 #
