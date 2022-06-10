@@ -32,9 +32,8 @@ Then, add the declarations for the attribute(s) to the Fraction class definition
 
 {% spoiler "Syntax" %}
 
-`private int numerator;`
-
-`private int denominator;`
+`private int numerator;
+private int denominator;`
 {% endspoiler %}
 
 {% next %}
@@ -48,8 +47,10 @@ Add a constructor with parameters for a numerator and a denominator to be passed
 In the body of the constructor, add code to set the
 value of each attribute (numerator or denominator) to the local variables
 
-{% spoiler "Syntax" %}
-`public Fraction(int n, int d)
+{% spoiler "Syntax Hint" %}
+
+`
+public Fraction(int n, int d)
 {
     // Remember, when writing
     // equations in code,
@@ -80,13 +81,29 @@ value of each attribute (numerator or denominator) to the local variables
 
 {% endspoiler %}
 
+{% next %}
 Now let's add another constructor that allows us to pass in only a numerator, setting the denominator to 1.
+
+{% spoiler "Syntax Hint" %}
+`public Fraction(int n)
+{
+    numerator = n;
+    denominator = 1;
+}
+{% endspoiler %}
 
 Next, let's add a `toString()` method that returns a String
 displaying our Fraction as:
 `numerator / denominator`
 
-We're ready to build some client code to try out our Fraction class.
+{% spoiler "Syntax Hint" %}
+`public String toString()
+{
+    return numerator + "/" + denominator;
+}`
+{% endspoiler %}
+
+Now we're ready to build some client code to try out our Fraction class.
 
 {% next %}
 
