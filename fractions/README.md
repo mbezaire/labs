@@ -126,6 +126,17 @@ Fraction whole = new Fraction(1);
 ```
 {% endspoiler %}
 
+Let's test our code. To compile, run the following command in the terminal:
+```
+javac Client.java
+```
+If there are any compile errors, troubleshoot them before moving on.
+
+Once the program compiles, run it by executing the following command in the terminal:
+```
+java Client
+```
+
 
 ## Math methods
 
