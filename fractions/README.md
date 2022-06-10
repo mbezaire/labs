@@ -32,25 +32,24 @@ Then, add the declarations for the attribute(s) to the Fraction class definition
 
 {% spoiler "Syntax" %}
 
-`private int numerator;
-private int denominator;`
+`private int numerator;`
+`private int denominator;`
 {% endspoiler %}
 
 {% next %}
 
 ## Creating Fractions
 
-Now, let's construct a method that allows our client code to pass in a numerator and a denominator as the Fraction object is created. 
+Now, let's construct a method that allows our client code to pass in a numerator and a denominator as the Fraction object is instantiated (created). 
 
-Add a constructor with parameters for a numerator and a denominator to be passed in as the Fraction object is instantiated (created).
+Add a constructor with parameters for a numerator and a denominator.
 
 In the body of the constructor, add code to set the
 value of each attribute (numerator or denominator) to the local variables
 
 {% spoiler "Syntax Hint" %}
 
-`
-public Fraction(int n, int d)
+`<!-- public Fraction(int n, int d)
 {
     // Remember, when writing
     // equations in code,
@@ -79,17 +78,17 @@ public Fraction(int n, int d)
 }
 `
 
-{% endspoiler %}
+{% endspoiler %} -->
 
 {% next %}
 Now let's add another constructor that allows us to pass in only a numerator, setting the denominator to 1.
 
 {% spoiler "Syntax Hint" %}
-`public Fraction(int n)
-{
-    numerator = n;
-    denominator = 1;
-}
+`public Fraction(int n)`
+`{`
+`    numerator = n;`
+`    denominator = 1;`
+`}`
 {% endspoiler %}
 
 Next, let's add a `toString()` method that returns a String
@@ -97,10 +96,10 @@ displaying our Fraction as:
 `numerator / denominator`
 
 {% spoiler "Syntax Hint" %}
-`public String toString()
-{
-    return numerator + "/" + denominator;
-}`
+`public String toString()`
+`{`
+`    return numerator + "/" + denominator;`
+`}`
 {% endspoiler %}
 
 Now we're ready to build some client code to try out our Fraction class.
@@ -113,10 +112,11 @@ In a new file called `Client.java`, define a `main` method.
 Inside the main method, let's declare and instantiate some `Fraction`s. Remember to use the `new` keyword.
 
 {% spoiler "Syntax" %}
-
-`Fraction quarter = new Fraction(1,4);`
-`Fraction half = new Fraction(1,2);`
-`Fraction whole = new Fraction(1);`
+```
+Fraction quarter = new Fraction(1,4);
+Fraction half = new Fraction(1,2);
+Fraction whole = new Fraction(1);
+```
 {% endspoiler %}
 
 
