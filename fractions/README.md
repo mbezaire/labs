@@ -10,6 +10,10 @@ Let's create a Fraction class in Java and then write methods that can perform ma
 
 The class we'll define will be called  `Fraction`. And we'll also create some client code that will create `Fraction`s and add, subtract, multiply, and divide them.
 
+Open Fraction.java to begin.
+
+{% next %}
+
 First, consider what **attributes** or fields a `Fraction` should have.
 
 {% spoiler "Attributes" %}
