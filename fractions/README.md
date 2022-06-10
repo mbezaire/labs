@@ -65,20 +65,42 @@ value of each attribute (numerator or denominator) to the local variables
     // that evaluates to something,
     // or a hard-coded value such as 
     // a number or String literal
+    
+    // We already know n and d,
+    // which are the local variables
+    // that get set to the arguments
+    // passed in when a Fraction is instantiated.
+    
+    // On the left side go the variables
+    // whose values we want to set, which
+    // are the instance variables numerator
+    // and denominator.    
 }
 `
 
 {% endspoiler %}
 
+Now let's add another constructor that allows us to pass in only a numerator, setting the denominator to 1.
+
 Next, let's add a `toString()` method that returns a String
 displaying our Fraction as:
 `numerator / denominator`
 
-Now, let's build some client code to try out our Fraction class.
+We're ready to build some client code to try out our Fraction class.
 
 {% next %}
 
 ## Client Code
+In a new file called `Client.java`, define a `main` method.
+
+Inside the main method, let's declare and instantiate some `Fraction`s. Remember to use the `new` keyword.
+
+{% spoiler "Syntax" %}
+
+`Fraction quarter = new Fraction(1,4);`
+`Fraction half = new Fraction(1,2);`
+`Fraction whole = new Fraction(1);`
+{% endspoiler %}
 
 
 ## Math methods
@@ -108,5 +130,20 @@ Once compiled, the Client code (which contains the main method) can be run by en
 Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
 
 ```
-submit50 cs50/problems/2019/fall/mario/less
+submit50 mbezaire/checks/main/fractions
 ```
+## Reviewing Feedback
+
+
+
+## Challenge
+
+After submitting your fraction work, you may continue with these challenges:
+1. Add a method to reduce the fraction. Find the largest common factor of the numerator and denominator and divide them both by that factor.
+
+You can submit your updated code using:
+
+```
+submit50 mbezaire/checks/main/fractions-challenge
+```
+
