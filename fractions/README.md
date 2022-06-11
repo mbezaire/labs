@@ -1,10 +1,10 @@
 # Fractions
 
-Fractions represent a quantity in terms of a numerator (how much we have) and a denominator (how much in total). In math, we learn how to perform common math functions on fractions.
+A fraction represents a quantity as a numerator (how much we have) and a denominator (the total). We can perform common math functions on fractions.
 
 <img title="Diagram of a pie chart fraction" src="https://github.com/mbezaire/labs/blob/ahs/fractions/pie.png?raw=true" width=400>
 
-Let's create a Fraction class in Java and then write methods that can perform math functions on Fraction objects. We'll also create some client code that will create `Fraction`s and add, subtract, multiply, and divide them.
+Let's create a Fraction class in Java and then write methods to perform math functions on Fraction objects. We'll write client code to create `Fraction`s and add, subtract, multiply, and divide them.
 
 {% next %}
 
