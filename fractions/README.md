@@ -46,10 +46,25 @@ Now, let's construct a method that allows our client code to pass in a numerator
 Add a constructor with parameters for a numerator and a denominator.
 
 In the body of the constructor, add code to set the
-value of each attribute (numerator or denominator) to the local variables
+value of each attribute (numerator or denominator) to the local variables.
+
+Add some logic so that the Fraction cannot have a denominator of 0. If the denominator is 0, set it to 1 instead.
+
+{% spoiler "Hint" %}
+```
+public Fraction(int n)
+{
+    numerator = n;
+    if (d == 0)
+        denominator = 1;
+    else
+        denominator = d;
+}
+```
+{% endspoiler %}
 
 <!-- 
-{% spoiler "Syntax Hint" %}
+{% spoiler "Hint" %}
 
 `public Fraction(int n, int d)
 {
@@ -86,7 +101,7 @@ value of each attribute (numerator or denominator) to the local variables
 {% next %}
 Now let's add another constructor that allows us to pass in only a numerator, setting the denominator to 1.
 
-{% spoiler "Syntax Hint" %}
+{% spoiler "Hint" %}
 ```
 public Fraction(int n)
 {
@@ -95,6 +110,23 @@ public Fraction(int n)
 }
 ```
 {% endspoiler %}
+
+{% next %}
+Lastly, let's add a copy constructor. We'll need to pass in a reference to some other Fraction object and set all the fields of our object to the values of the corresponding fields in the other Fraction object.
+
+{% spoiler "Hint" %}
+Recall that, as we are in the Fraction class, we have access to the private fields and methods of other Fraction objects. We can either refer to the fields directly or use getters and setters, if we have defined them.
+```
+public Fraction(Fraction other)
+{
+    numerator = other.numerator;
+    denominator = other.denominator;
+}
+```
+{% endspoiler %}
+
+
+{% next %}
 
 Next, let's add a `toString()` method that returns a String
 displaying our Fraction as:
@@ -116,15 +148,31 @@ Now we're ready to build some client code to try out our Fraction class.
 ## Client Code
 In a new file called `Client.java`, define a `main` method.
 
-Inside the main method, let's declare and instantiate some `Fraction`s. Remember to use the `new` keyword.
+Inside the main method, let's declare and instantiate some `Fraction`s, testing each of our constructors at least once. Remember to use the `new` keyword.
 
 {% spoiler "Syntax" %}
 ```
 Fraction quarter = new Fraction(1,4);
 Fraction half = new Fraction(1,2);
 Fraction whole = new Fraction(1);
+Fraction one = new Fraction(whole);
 ```
 {% endspoiler %}
+
+After creating our `Fraction` objects, we will want to check them. Let's print our `Fraction` objects.
+
+
+{% spoiler "Syntax" %}
+```
+System.out.println(quarter);
+System.out.println(half);
+System.out.println(whole);
+System.out.println(one);
+```
+{% endspoiler %}
+
+
+{% next %}
 
 Let's test our code. To compile, run the following command in the terminal:
 ```
