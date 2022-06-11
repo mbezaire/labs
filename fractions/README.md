@@ -125,7 +125,6 @@ public Fraction(Fraction other)
 ```
 {% endspoiler %}
 
-
 {% next %}
 
 Next, let's add a `toString()` method that returns a String
@@ -173,6 +172,7 @@ System.out.println(one);
 
 
 {% next %}
+## Compile and Test
 
 Let's test our code. To compile, run the following command in the terminal:
 ```
@@ -187,18 +187,23 @@ java Client
 
 
 ## Math methods
+Create methods for add, subtract, multiply, divide based on fraction arithmetic.
 
+Each of these methods should expect a Fraction object as a parameter. The passed in object is
+the right side of the arithmetic equation, this object is the left side.
 
+Each arithmetic method builds a new instance of a Fraction object with the resulting calculation
+and returns its value. These methods should not change the value of either this Fraction or the
+parameter Fraction
 
-## Copy Constructor
+Provide a method that returns the decimal equivalent of the fraction.
 
+## Testing our math
 
-## More Client Code
+Now let's add some client code to test our math.
 
-
-## Testing
-
-As a reminder, to compile our code we will enter a command at the terminal:
+{% spoiler "Syntax" %}
+To compile our code we will enter a command at the terminal:
 
 `javac Client.java`
 
@@ -207,6 +212,7 @@ This will compile our Client class and also our Fraction class. Look in the term
 Once compiled, the Client code (which contains the main method) can be run by entering at the terminal:
 
 `java Client`
+{% endspoiler %}
 
 ## How to Submit
 
@@ -223,7 +229,13 @@ submit50 mbezaire/checks/main/fractions
 
 After submitting your fraction work, you may continue with these challenges:
 1. Add a method to reduce the fraction. Find the largest common factor of the numerator and denominator and divide them both by that factor.
-
+Create a reduce() function that ensures the Fraction is in lowest terms. This should be called in the
+constructor so that Fraction(4, 8) would create a Fraction of 1/2
+Create another constructor that takes in a double as a parameter and creates a Fraction object based on
+this.
+For example,
+Fraction f = new Fraction(.25);
+System.out.println(f) -> prints 1/4
 You can submit your updated code using:
 
 ```
