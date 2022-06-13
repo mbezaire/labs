@@ -5,7 +5,7 @@ A fraction represents a quantity as a numerator (how much we have) and a denomin
 
 <img title="Diagram of a pie chart fraction" src="https://github.com/mbezaire/labs/blob/ahs/fractions/pie.png?raw=true" width=400>
 
-Let's create a Fraction class in Java and then write methods to perform math functions on Fraction objects. Then we can create `Fraction`s and add, subtract, multiply, and divide them.
+Let's create a Fraction class in Java and then write methods that allow us to add, subtract, multiply, and divide `Fraction`s.
 
 {% next %}
 
