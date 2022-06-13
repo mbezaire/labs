@@ -220,7 +220,8 @@ System.out.println(oneEighth);
 
 Remember to (re)compile and run our code to test it after making these updates:
 
-```javac Client.java
+```
+javac Client.java
 java Client
 ```
 
