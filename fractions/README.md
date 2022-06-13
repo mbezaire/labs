@@ -246,13 +246,14 @@ submit50 mbezaire/checks/main/fraction
 
 ## Challenge
 
-After submitting your fraction work, you may continue with these challenges:
-1. Add a method to reduce the fraction. Find the largest common factor of the numerator and denominator and divide them both by that factor.
-Create a reduce() function that ensures the Fraction is in lowest terms. This should be called in the
-constructor so that Fraction(4, 8) would create a `Fraction` of 1/2.
+After submitting your fraction work, you may challenge yourself by adding additional functionality to your `Fraction` class.
 
-Create another constructor that takes in a double as a parameter and creates a Fraction object based on
-this.
+1. Define a `reduce` method in `Fraction.java` that will reduce the fraction to its lowest terms. Find the largest common factor of the numerator and denominator and divide them both by that factor.
+
+Then, call `reduce()` from the constructors in `Fraction` so that instantiating a new `Fraction(4, 8)` would create a `Fraction` of 1/2 instead.
+
+2. Create another constructor that takes in a double as a parameter and creates a Fraction object based on
+the double value.
 
 For example,
 
@@ -264,7 +265,7 @@ System.out.println(f); // prints 1/4
 You can submit your updated code using:
 
 ```
-submit50 mbezaire/checks/main/fractions-challenge
+submit50 mbezaire/checks/main/fraction-challenge
 ```
 -->
 
