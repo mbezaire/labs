@@ -186,35 +186,45 @@ Once the program compiles, run it by executing the following command in the term
 java Client
 ```
 
-
+{% next %}
 ## Math methods
-Create methods for add, subtract, multiply, divide based on fraction arithmetic.
+Create methods `add`, `subtract`, `multiply`, and `divide` to perform their respective mathematical operations based on fraction arithmetic. The `divide` method should use the current `Fraction` as the dividend and the passed-in reference as the divisor.
 
 Each of these methods should expect a Fraction object as a parameter. The passed in object is
 the right side of the arithmetic equation, this object is the left side.
 
 Each arithmetic method builds a new instance of a Fraction object with the resulting calculation
 and returns its value. These methods should not change the value of either this Fraction or the
-parameter Fraction
+parameter Fraction.
 
-Provide a method that returns the decimal equivalent of the fraction.
+Provide a method called `value()` that returns the decimal equivalent of the fraction.
 
+Then make sure the `Fraction` class still compiles:
+```javac Client.java
+java Client
+```
+
+{% next %}
 ## Testing our math
 
-Now let's add some client code to test our math.
+Now let's add some more client code to test our math:
 
 {% spoiler "Syntax" %}
-To compile our code we will enter a command at the terminal:
-
-`javac Client.java`
-
-This will compile our Client class and also our Fraction class. Look in the terminal for any compile errors.
-
-Once compiled, the Client code (which contains the main method) can be run by entering at the terminal:
-
-`java Client`
+Fraction threeQuarters = half.add(quarter);
+Fraction oneEighth = half.multiply(quarter);
+System.out.println(threeQuarters);
+System.out.println(oneEighth);
 {% endspoiler %}
 
+Remember to (re)compile and run our code to test it after making these updates:
+
+```javac Client.java
+java Client
+```
+
+That's it for now! Come back in July for an update to this tutorial with a Challenge option.
+
+<!--
 ## Review and Submit
 
 Once you have finished the assignment, you can test grade it by executing the command below:
@@ -228,7 +238,7 @@ Once you are satisfied with the performance of your code, you can submit it. Exe
 ```
 submit50 mbezaire/checks/main/fraction
 ```
-<!--
+
 ## Challenge
 
 After submitting your fraction work, you may continue with these challenges:
