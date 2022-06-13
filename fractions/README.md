@@ -212,10 +212,12 @@ java Client
 Now let's add some more client code to test our math:
 
 {% spoiler "Syntax" %}
+```
 Fraction threeQuarters = half.add(quarter);
 Fraction oneEighth = half.multiply(quarter);
 System.out.println(threeQuarters);
 System.out.println(oneEighth);
+```
 {% endspoiler %}
 
 Remember to (re)compile and run our code to test it after making these updates:
@@ -247,12 +249,18 @@ submit50 mbezaire/checks/main/fraction
 After submitting your fraction work, you may continue with these challenges:
 1. Add a method to reduce the fraction. Find the largest common factor of the numerator and denominator and divide them both by that factor.
 Create a reduce() function that ensures the Fraction is in lowest terms. This should be called in the
-constructor so that Fraction(4, 8) would create a Fraction of 1/2
+constructor so that Fraction(4, 8) would create a `Fraction` of 1/2.
+
 Create another constructor that takes in a double as a parameter and creates a Fraction object based on
 this.
+
 For example,
+
+```
 Fraction f = new Fraction(.25);
-System.out.println(f) -> prints 1/4
+System.out.println(f); // prints 1/4
+```
+
 You can submit your updated code using:
 
 ```
