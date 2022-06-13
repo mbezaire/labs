@@ -215,17 +215,20 @@ Once compiled, the Client code (which contains the main method) can be run by en
 `java Client`
 {% endspoiler %}
 
-## How to Submit
+## Review and Submit
 
-Execute the below, logging in with your GitHub username and password when prompted. For security, you'll see asterisks (`*`) instead of the actual characters in your password.
+Once you have finished the assignment, you can test grade it by executing the command below:
 
 ```
-submit50 mbezaire/checks/main/fractions
+check50 mbezaire/checks/main/fraction
 ```
-## Reviewing Feedback
 
+Once you are satisfied with the performance of your code, you can submit it. Execute this command to submit:
 
-
+```
+submit50 mbezaire/checks/main/fraction
+```
+<!--
 ## Challenge
 
 After submitting your fraction work, you may continue with these challenges:
@@ -242,4 +245,5 @@ You can submit your updated code using:
 ```
 submit50 mbezaire/checks/main/fractions-challenge
 ```
+-->
 
