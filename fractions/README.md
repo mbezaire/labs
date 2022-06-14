@@ -250,11 +250,13 @@ submit50 mbezaire/checks/main/java/fraction
 
 Once your Fraction class passed all the `check50` tests (with everything in the check list showing up green and smiley), you may challenge yourself by adding additional functionality to your `Fraction` class:
 
-1. Define a `reduce` method in `Fraction.java` that will reduce the fraction to its lowest terms. Find the largest common factor of the numerator and denominator and divide them both by that factor.
+First, define a `reduce` method in `Fraction.java` that will reduce the fraction to its lowest terms. Find the largest common factor of the numerator and denominator and divide them both by that factor.
 
 Then, call `reduce()` from the constructors in `Fraction` so that instantiating a new `Fraction(4, 8)` would create a `Fraction` of 1/2 instead.
 
-2. Create another constructor that takes in a double as a parameter and creates a Fraction object based on
+{% next %}
+
+Lastly, create another constructor that takes in a double as a parameter and creates a Fraction object based on
 the double value.
 
 For example,
