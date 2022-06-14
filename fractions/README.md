@@ -227,26 +227,28 @@ javac Client.java
 java Client
 ```
 
-That's it for now! Come back in July for an update to this tutorial with a Challenge option.
+Now you're ready for the final check!
 
-<!--
-## Review and Submit
+{% next %}
+## Check your code
 
 Once you have finished the assignment, you can test grade it by executing the command below:
 
 ```
-check50 mbezaire/checks/main/fraction
+check50 --local  mbezaire/checks/main/java/fraction
 ```
-
+<!--
 Once you are satisfied with the performance of your code, you can submit it. Execute this command to submit:
 
 ```
-submit50 mbezaire/checks/main/fraction
+submit50 mbezaire/checks/main/java/fraction
 ```
+-->
 
+{% next %}
 ## Challenge
 
-After submitting your fraction work, you may challenge yourself by adding additional functionality to your `Fraction` class.
+Once your Fraction class passed all the `check50` tests (with everything in the check list showing up green and smiley), you may challenge yourself by adding additional functionality to your `Fraction` class:
 
 1. Define a `reduce` method in `Fraction.java` that will reduce the fraction to its lowest terms. Find the largest common factor of the numerator and denominator and divide them both by that factor.
 
@@ -262,10 +264,10 @@ Fraction f = new Fraction(.25);
 System.out.println(f); // prints 1/4
 ```
 
-You can submit your updated code using:
+You can check your challenge code using:
 
 ```
-submit50 mbezaire/checks/main/fraction-challenge
+check50 --local mbezaire/checks/main/java/fraction-challenge
 ```
--->
+
 
