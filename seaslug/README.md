@@ -165,6 +165,8 @@ If your for loop is iterating over a range, accessing the correct time point may
 
 Once you have a simulation that can run for 30 time steps, considering the sensory neuron activity at each step and calculating the resulting motor neuron activity, you are ready to graph your model.
 
+{% next %}
+
 ## Graphing the simulation
 
 To graph the simulation, we need to add some additional functionality to python. We do this by importing libraries.
@@ -232,7 +234,7 @@ Keep in mind:
 * We only want to update the value of `effconnweight` if the sensory neuron has experienced input
 * We want the effect of the sensory neuron on the motor neuron to be reduced with repeated inputs
 
-To start, add another variable, `habrate`, to represent the rate at which the reflex circuit habituations (or the rate at which the connection weakens), on a scale of 0 to 1 where 0 means no habituation ever occurs and 1 means instant, full disconnection of the circuit would occur.
+To start, add another variable, `habrate`, to represent the rate at which the reflex circuit habituates (or the rate at which the connection weakens), on a scale of 0 to 1 where 0 means no habituation ever occurs and 1 means instant, full disconnection of the circuit would occur.
 
 {% spoiler "Code" %}
 ```
@@ -262,6 +264,11 @@ To make it easy to run the code multiple times, let's set the `habrate` variable
 
 Make sure to add the value of `habrate` to the title of your figure so that you can tell which rate of habituation led to which results.
 
+{% spoiler "Code" %}
+```
+ax1.set_title("Habituation: " + str(habrate))
+```
+{% endspoiler %}
 Try running the simulation with several different rates of habituation.
 
 {% next %}
@@ -271,7 +278,7 @@ Once you have finished the assignment, you can reorganize your code a bit and th
 
 Take these steps before running the tests on your code:
 1. Comment out your plotting commands
-2. Print out the contents of your `motor` variable
+2. At the end of your code, print out the contents of your `motor` variable
 
 You can now test your code by executing the command below in the terminal:
 
