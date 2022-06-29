@@ -233,6 +233,7 @@ Now let's add code to update the value of effconnweight in response to activity 
 Keep in mind:
 * We only want to update the value of `effconnweight` if the sensory neuron has experienced input
 * We want the effect of the sensory neuron on the motor neuron to be reduced with repeated inputs
+* Although the value of `effconnweight` needs to be updated each time the sensory neuron is active, the update should happen after the motor neuron activity has been calculated for that time step (why?)
 
 To start, add another variable, `habrate`, to represent the rate at which the reflex circuit habituates (or the rate at which the connection weakens), on a scale of 0 to 1 where 0 means no habituation ever occurs and 1 means instant, full disconnection of the circuit would occur.
 
