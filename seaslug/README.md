@@ -1,7 +1,7 @@
 <!-- https://lab.cs50.io/mbezaire/labs/rise/seaslug -->
 # Aplysia 
 
-*Aplysia* is a simple sea slug with a gill located dorsally. The gill is vulnerable and fleshy, so the Aplysia must contract it when predators are near to avoid being eaten.
+*Aplysia* is a simple sea slug with a gill located dorsally. Because the gill is fleshy and therefore vulnerable to predators, Aplysia must contract it when predators are near to avoid being eaten.
 
 <img title="Aplysia" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Aplysia_californica%2C_dorsal.jpg/1280px-Aplysia_californica%2C_dorsal.jpg" width=400>
 
@@ -282,8 +282,9 @@ Try running the simulation with several different rates of habituation.
 Once you have finished the assignment, you can reorganize your code a bit and then test it against our auto checker.
 
 Take these steps before running the tests on your code:
-1. Comment out your plotting commands
-2. At the end of your code, print out the contents of your `motor` variable
+1. Comment out your plotting commands (use three double quotes to start and end a multi-line comment)
+2. Comment out the line that imports matplotlib.pyplot
+3. At the end of your code, print out the contents of your `motor` variable
 
 You can now test your code by executing the command below in the terminal:
 
