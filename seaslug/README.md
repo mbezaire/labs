@@ -270,9 +270,11 @@ Make sure to add the value of `habrate` to the title of your figure so that you 
 ax1.set_title("Habituation: " + str(habrate))
 ```
 {% endspoiler %}
+
 Try running the simulation with several different rates of habituation.
 
 {% next %}
+
 ## Check the Code
 
 Once you have finished the assignment, you can reorganize your code a bit and then test it against our auto checker.
@@ -310,6 +312,8 @@ Consider what you would need to add to this simulation to relinquish any of the 
 {% next %}
 
 Now, try implementing your idea(s) in the program. You may need to add additional variables or functions in order to do so.
+
+Add comments to your code, documenting the changes you have made and the assumption or simplification they address.
 
 Make sure to test and graph your code - does it make sense? How does it compare to your original simulation?
 
