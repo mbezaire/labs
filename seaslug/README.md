@@ -291,6 +291,7 @@ Once you are satisfied with your work, you can submit it. First, follow the step
 ```
 submit50 mbezaire/checks/main/rise/seaslug
 ```
+{% next "Optional Challenge" %}
 
 ## Challenge
 
