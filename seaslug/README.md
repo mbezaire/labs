@@ -65,6 +65,8 @@ Below the function definition, assign `motor` to the output of a call to the `ca
 
 Let's test what we have so far. Set the value of `sensory` to 1. After assigning `motor` to the result of the call to `calculate_output`, print `motor` to verify that it is set to 4.
 
+To execute your code file, enter in the terminal window: `python seaslug.py`.
+
 Once `motor` is set correctly, let's develop this simulation further.
 
 {% next %}
