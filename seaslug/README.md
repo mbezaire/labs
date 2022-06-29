@@ -202,7 +202,7 @@ plt.show()
 
 {% endspoiler %}
 
-To see the graph, upon running `python seaslug.py` in the terminal, click the *Desktop* tab in your Lab window to show the figure. You may wish to click the full-screen icon in the upper right corner to fully view the figure. When done, click the little x on the figure itself to close the figure and finish running your program.
+To see the graph, upon running `python seaslug.py` in the terminal, click the *Desktop* tab in your Lab window to show the figure. You may wish to click the full-screen icon in the upper right corner to fully view the figure. When done, click the little x on the figure itself to close the figure. Your python program will then complete and the terminal will display another prompt `$`.
 
 Once you have examined your graph, let's enhance the model so that it can include the biological process of habituation.
 
