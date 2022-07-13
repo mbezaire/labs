@@ -1,3 +1,5 @@
 .*
+key.py
+!README.md
 !.cs50.yml
 !.gitignore
