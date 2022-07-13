@@ -1,4 +1,4 @@
-<!-- https://lab.cs50.io/mbezaire/labs/rise/nernst -->
+<!-- https://lab.cs50.io/mbezaire/labs/rise/ghk -->
 # Resting membrane potential
 
 In the Nernst lab, we calculated the reversal potential of a single ion. However, we may also want to know what happens in a neuron that is permeable to multiple ions. We can use a different equation to calculate the resting membrane potential of a neuron, taking into account the influence of multiple ions simultaneously.
@@ -37,9 +37,9 @@ Let's create a Python function that can calculate the resting membrane potential
 
 Open ghk.py to begin. 
 
-**Note:** it may be easier to work inside the regular CS50 code website instead of this sandbox. To do so, copy the contents of nernst.py and paste into a new ghk.py file within https://code.cs50.io .
+**Note:** it may be easier to work inside the regular CS50 code website instead of this sandbox. To do so, copy the contents of ghk.py and paste into a new ghk.py file within https://code.cs50.io .
 
-First, we'll define a function called `nernst` that takes in seven arguments:
+First, we'll define a function called `ghk` that takes in seven arguments:
 * the valence of the ion
 * the intracellular concentration of each of Na, K, and Cl in mM
 * the extracellular concentration of each of Na, K, and Cl in mM
@@ -49,7 +49,7 @@ This function should return a variable calculated inside the function.
 {% spoiler "See Code" %}
 
 ```
-def nernst(valence, conc_in, conc_out):
+def ghk(valence, conc_in, conc_out):
     Vm = 0
     
     return Vm
@@ -70,7 +70,7 @@ Note: we can use the `math` library in Python to calculate the natural log, `ln`
 
 ```
 def ghk(...):
-    Vm = # plug in the nernst equation here
+    Vm = # plug in the ghk equation here
     
     return Vm
     
