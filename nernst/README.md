@@ -3,7 +3,7 @@
 
 The electrical behavior of neurons depends on the intracellular and extracellular ions, especially on ions capable of crossing the neuron's membrane. At rest, the neuron's membrane potential is mostly determined by the ions potassium (K+), sodium (Na+) and chloride (Cl-) as well as negatively charged proteins inside the neuron.
 
-<img title="Membrane permeable ions" src="https://biocyclopedia.com/index/general_zoology/images/images31/fig008.jpg" width=400>
+<img title="Membrane permeable ions" src="ions.png" width=400>
 
 {% next %}
 
@@ -21,7 +21,7 @@ The direction in which the ions cross depends on the concentration gradient and 
 
 {% next %}
 
-<img title="Ions at the Membrane" src="https://biocyclopedia.com/index/general_zoology/images/images31/fig008.jpg" width=400>
+<img title="Ions at the Membrane" src="membrane.png" width=400>
 
 To determine which direction a particular ionic current will flow when its channels are open, we can calculate a property called the reversal potential of the ion. The reversal potential is the membrane potential at which the current will switch directions (ions flowing in versus out of the cell).
 
@@ -31,7 +31,7 @@ To determine which direction a particular ionic current will flow when its chann
 
 We can calculate the reversal potential of an ion using the Nernst Equation.
 
-<img src="https://render.githubusercontent.com/render/math?math=E_R = \frac{RT}{zF}ln\frac{[X]_{in}}{[X]_{out}}">
+<img src="https://latex.codecogs.com/svg.image?E_R&space;=&space;\frac{RT}{zF}ln\frac{[X]_{out}}{[X]_{in}}">
 
 where [X] refers to the concentration of ion X either inside or outside the neuron and z refers to the valence of ion X (+1 for potassium or sodium, -1 for chloride).
 
