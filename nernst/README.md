@@ -63,7 +63,7 @@ This function should return a variable calculated inside the function.
 {% spoiler "See Code" %}
 
 ```
-def nernst(valence, conc_in, conc_out)
+def nernst(valence, conc_in, conc_out):
     rev_pot = 0
     
     return rev_pot
@@ -75,6 +75,8 @@ def nernst(valence, conc_in, conc_out)
 {% next %}
 
 Now, let's add the body of the `nernst` function. In the function, write code to calculate the reversal potential of an ion using the Nernst equation and the information passed as arguments to the function.
+
+Checking our units, it seems that our reversal potential will be calculated in units of volts (V). However, units of milliVolts would be more useful for us. To convert, multiply the constants in the Nernst equation by a factor of 1000.
 
 Note: we can use the `math` library in Python to calculate the natural log, `ln`. The command we will use is `math.log()`; by default, the `log` method of math uses `e` as its base.
 
@@ -103,17 +105,25 @@ To call a function in python, type the name of the function with open and close 
 
 Now let's run the code and test it. To execute the code file, enter in the terminal window: `python nernst.py`.
 
-Verify that the code prints something like -75 when ran with the parameters given above (1, 140, 3).
+Verify that the code prints something like -85.565 when ran with the parameters given above (1, 140, 5).
 
 {% next %}
 
 ## Check the Code
 
-Once you have finished the assignment, you can reorganize your code a bit and then test it against our auto checker.
+After confirming that the equation is calculating correctly, let's update our code so that it takes user input for the ion information rather than hard-coding the numbers into our program.
 
-Take these steps before running the tests on your code:
-1. 
-You can now test your code by executing the command below in the terminal:
+Use `input` function calls with appropriate prompts to set the values for the valence, and the internal and external concentration arguments that are passed to the `nernst` function.
+
+Make sure to convert the values assigned from the `input()` call to integers before passing them to the `nernst` function.
+{% spoiler "Hint" %}
+
+```
+my_integer = int(input("Enter an integer: "))
+```
+{% endspoiler %}
+
+You can now test your code against our auto-checker by executing the command below in the terminal:
 
 ```
 check50 --local mbezaire/checks/main/rise/nernst
