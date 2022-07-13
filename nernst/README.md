@@ -37,9 +37,9 @@ where [X] refers to the concentration of ion X either inside or outside the neur
 
 {% spoiler "Parameters" %}
 
-R is the gas constant, 8.314 J/(K * mol)
-T is the temperature in Kelvins (K)
-F is Faraday's constant, 96485.3 Coulombs (C) / mol
+* R is the gas constant, 8.314 J/(K * mol)
+* T is the temperature in Kelvins (K)
+* F is Faraday's constant, 96485.3 Coulombs (C) / mol
 
 {% endspoiler %}
 
