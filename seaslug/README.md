@@ -13,13 +13,17 @@ The gill is sensitive to touch. When the gill senses any pressure, it contracts,
 
 This reflex is made possible by a sensory neuron that receives the touch information via activitation of mechanoreceptors. The sensory neuron is part of a circuit that connects to a motor neuron. When the motor neuron is activated, it releases neurotransmitter onto the gill muscle, contracting the muscle to pull the gill shut tight.
 
-Let's create a model of the circuit involved in this reflex.
+<img title="Reflex circuit from Biocyclopedia" src="https://biocyclopedia.com/index/general_zoology/images/images31/fig008.jpg" width=400>
+
+Let's create a simplified model of the circuit involved in this reflex.
 
 {% next %}
 
 ## Building the circuit
 
 Open seaslug.py to begin. 
+
+**Note:** it may be easier to work inside the regular CS50 code website instead of this sandbox. To do so, copy the contents of seaslug.py and paste into a new seaslug.py file within https://code.cs50.io .
 
 First, we'll create the variables to represent the reflex circuit.
 
@@ -204,6 +208,8 @@ plt.show()
 
 To see the graph, upon running `python seaslug.py` in the terminal, click the *Desktop* tab in your Lab window to show the figure. You may wish to click the full-screen icon in the upper right corner to fully view the figure. When done, click the little x on the figure itself to close the figure. Your python program will then complete and the terminal will display another prompt `$`.
 
+**Note:** Close the figure before closing the *Desktop* tab or else the program will freeze. It is recommended to leave the *Desktop* tab open so that you can run the program multiple times and view the graph each time.
+
 Once you have examined your graph, let's enhance the model so that it can include the biological process of habituation.
 
 {% next %}
@@ -289,7 +295,7 @@ Take these steps before running the tests on your code:
 You can now test your code by executing the command below in the terminal:
 
 ```
-check50 mbezaire/checks/main/rise/seaslug
+check50 --local mbezaire/checks/main/rise/seaslug
 ```
 
 Once you are satisfied with your work, you can submit it. First, follow the steps to get a [Github Personal Access Token](https://cs50.readthedocs.io/github/#personal-access-token) and then execute this command in the terminal to submit:
