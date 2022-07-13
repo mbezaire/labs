@@ -3,7 +3,7 @@
 
 The electrical behavior of neurons depends on the intracellular and extracellular ions, especially on ions capable of crossing the neuron's membrane. At rest, the neuron's membrane potential is mostly determined by the ions potassium (K+), sodium (Na+) and chloride (Cl-) as well as negatively charged proteins inside the neuron.
 
-<img title="Membrane permeable ions" src="ions.png" width=400>
+<img title="Membrane permeable ions" src="ions.jpg" width=400>
 
 {% next %}
 
@@ -21,7 +21,7 @@ The direction in which the ions cross depends on the concentration gradient and 
 
 {% next %}
 
-<img title="Ions at the Membrane" src="membrane.png" width=400>
+<img title="Ions at the Membrane" src="membrane.jpg" width=400>
 
 To determine which direction a particular ionic current will flow when its channels are open, we can calculate a property called the reversal potential of the ion. The reversal potential is the membrane potential at which the current will switch directions (ions flowing in versus out of the cell).
 
