@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 lab50:
   window:
     - editor
@@ -7,3 +8,14 @@ lab50:
   files:
     - !exclude "*"
     - !include nernst.py
+=======
+lab50:
+  window:
+    - editor
+    - readme
+    - terminal
+    - x
+  files:
+    - !exclude "*"
+    - !include nernst.py
+>>>>>>> placeholder for nernst lab
