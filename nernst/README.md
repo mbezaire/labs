@@ -21,7 +21,7 @@ The direction in which the ions cross depends on the concentration gradient and 
 
 {% next %}
 
-<img title="Ions at the Membrane" src="https://github.com/mbezaire/labs/blob/rise/nernst/membrane.png" width=400>
+<img title="Ions at the Membrane" src="https://github.com/mbezaire/labs/blob/rise/nernst/membrane.png?raw=true" width=400>
 
 To determine which direction a particular ionic current will flow when its channels are open, we can calculate a property called the reversal potential of the ion. The reversal potential is the membrane potential at which the current will switch directions (ions flowing in versus out of the cell).
 
