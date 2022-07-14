@@ -62,7 +62,7 @@ def ghk(valence, conc_in, conc_out):
 
 Now, let's add the body of the `ghk` function. In the function, first define variables for the permeability of each ion (for K, use 1; for Na, use 0.05; for Cl, use 0.3). Then, write code to calculate the resting membrane potential of a neuron using the GHK equation, the permeabilities, and the information passed as arguments to the function. 
 
-Checking our units, it seems that our reversal potential will be calculated in units of volts (V). However, units of milliVolts would be more useful for us. To convert, multiply the constants in the GHK equation by a factor of 1000.
+Checking our units, it seems that our reversal potential will be calculated in units of volts (V). However, units of milliVolts would be more useful for us. To convert, multiply the right side of the GHK equation by a factor of 1000.
 
 Note: we can use the `math` library in Python to calculate the natural log, `ln`. The command we will use is `math.log()`; by default, the `log` method of math uses `e` as its base.
 
