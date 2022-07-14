@@ -76,7 +76,7 @@ def nernst(valence, conc_in, conc_out):
 
 Now, let's add the body of the `nernst` function. In the function, write code to calculate the reversal potential of an ion using the Nernst equation and the information passed as arguments to the function.
 
-Checking our units, it seems that our reversal potential will be calculated in units of volts (V). However, units of milliVolts would be more useful for us. To convert, multiply the constants in the Nernst equation by a factor of 1000.
+Checking our units, it seems that our reversal potential will be calculated in units of volts (V). However, units of milliVolts would be more useful for us. To convert, multiply the right side of the Nernst equation by a factor of 1000.
 
 Note: we can use the `math` library in Python to calculate the natural log, `ln`. The command we will use is `math.log()`; by default, the `log` method of math uses `e` as its base.
 
