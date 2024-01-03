@@ -248,13 +248,7 @@ Now you're ready for the final check!
 {% next %}
 ## Check your code
 
-Once you have finished the assignment, you can test grade it by executing the command below in the terminal:
-
-```
-check50 --local  mbezaire/checks/main/java/fraction
-```
-
-Then execute this command in the terminal to submit:
+Once you have finished the assignment, you can execute this command in the terminal to check and submit:
 
 ```
 submit50 mbezaire/checks/main/java/fraction
@@ -282,12 +276,8 @@ For example,
 Fraction f = new Fraction(.25);
 System.out.println(f); // prints 1/4
 ```
-You can check your challenge code using:
 
-```
-check50 --local mbezaire/checks/main/java/fraction-challenge
-```
-Then execute this command in the terminal to submit:
+Once you have finished the challenge, you can execute this command in the terminal to check and submit:
 
 ```
 submit50 mbezaire/checks/main/java/fraction-challenge
