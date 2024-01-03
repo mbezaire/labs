@@ -1,3 +1,13 @@
+---
+files:
+  - Client.java
+  - Fraction.java
+  - pie.png
+url: https://raw.githubusercontent.com/mbezaire/labs/ahs/fractions/README.md
+window:
+  - terminal
+---
+
 <!-- https://lab.cs50.io/mbezaire/labs/ahs/fractions -->
 # Fractions
 
