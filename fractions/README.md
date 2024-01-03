@@ -254,7 +254,7 @@ Once you have finished the assignment, you can test grade it by executing the co
 check50 --local  mbezaire/checks/main/java/fraction
 ```
 
-If you have joined our online classroom and wish to share your completed Fraction code to the teacher, you can submit it. First, follow the steps to get a [Github Personal Access Token](https://cs50.readthedocs.io/github/#personal-access-token) and then execute this command in the terminal to submit:
+<!--If you have joined our online classroom and wish to share your completed Fraction code to the teacher, you can submit it. First, follow the steps to get a [Github Personal Access Token](https://cs50.readthedocs.io/github/#personal-access-token) and then --> Then execute this command in the terminal to submit:
 
 ```
 submit50 mbezaire/checks/main/java/fraction
