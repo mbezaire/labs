@@ -2,7 +2,6 @@
 files:
   - Client.java
   - Fraction.java
-  - pie.png
 url: https://raw.githubusercontent.com/mbezaire/labs/ahs/fractions/README.md
 window:
   - terminal
@@ -19,7 +18,8 @@ Let's create a Fraction class in Java and then write methods that allow us to ad
 
 {% next %}
 
-Open Fraction.java to begin. The class we'll define will be called  `Fraction`. 
+## Fraction.java
+Open Fraction.java to begin. The class we'll define will be called  `Fraction`.
 
 Next, consider what **attributes** or fields a `Fraction` should have.
 
@@ -34,6 +34,7 @@ In math, we define a fraction is a numerator over a denominator. Once we have th
 
 {% next %}
 
+## Fields
 Once you have decided on the attribute(s) for the Fraction class, consider how to declare them in the `Fraction.java` file:
 
 * Should the visibility be `public` or `private`?
@@ -52,7 +53,7 @@ private int denominator;
 
 ## Creating Fractions
 
-Now, let's construct a method that allows our client code to pass in a numerator and a denominator as the Fraction object is instantiated (created). 
+Now, let's construct a method that allows our client code to pass in a numerator and a denominator as the Fraction object is instantiated (created).
 
 Add a constructor with parameters for a numerator and a denominator.
 
@@ -74,7 +75,7 @@ public Fraction(int n)
 ```
 {% endspoiler %}
 
-<!-- 
+<!--
 {% spoiler "Hint" %}
 
 `public Fraction(int n, int d)
@@ -85,31 +86,33 @@ public Fraction(int n)
     // variable whose value
     // you want to set goes on
     // the left.
-    
+
     // The right hand side is
     // what you know already,
     // whether a variable with
     // a value assigned, an expression
     // that evaluates to something,
-    // or a hard-coded value such as 
+    // or a hard-coded value such as
     // a number or String literal
-    
+
     // We already know n and d,
     // which are the local variables
     // that get set to the arguments
     // passed in when a Fraction is instantiated.
-    
+
     // On the left side go the variables
     // whose values we want to set, which
     // are the instance variables numerator
-    // and denominator.    
+    // and denominator.
 }
 `
 
-{% endspoiler %} 
+{% endspoiler %}
 -->
 
 {% next %}
+
+## Alternate Constructor
 Now let's add another constructor that allows us to pass in only a numerator, setting the denominator to 1.
 
 {% spoiler "Hint" %}
@@ -123,6 +126,8 @@ public Fraction(int n)
 {% endspoiler %}
 
 {% next %}
+
+## Copy Constructor
 Lastly, let's add a copy constructor. We'll need to pass in a reference to some other Fraction object and set all the fields of our object to the values of the corresponding fields in the other Fraction object.
 
 {% spoiler "Hint" %}
@@ -138,6 +143,7 @@ public Fraction(Fraction other)
 
 {% next %}
 
+## toString()
 Next, let's add a `toString()` method that returns a String
 displaying our Fraction as:
 `numerator / denominator`
@@ -264,6 +270,8 @@ First, define a `reduce` method in `Fraction.java` that will reduce the fraction
 Then, call `reduce()` from the constructors in `Fraction` so that instantiating a new `Fraction(4, 8)` would create a `Fraction` of 1/2 instead.
 
 {% next %}
+
+## Challenge Constructor
 
 Lastly, create another constructor that takes in a double as a parameter and creates a Fraction object based on
 the double value.
